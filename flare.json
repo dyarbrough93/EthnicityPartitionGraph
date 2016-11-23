@@ -1,0 +1,1219 @@
+var flare = {
+    "name": "World",
+    "size": 728029,
+    "children": [{
+            "name": "North America",
+            "size": 45606,
+            "children": [{
+                "name": "[USA, Canada, Mexico]",
+                "size": 37358,
+                "parentPop": "North America",
+                "parentSize": 45606,
+                "children": [{
+                    "name": "Canada",
+                    "size": 3636
+                }, {
+                    "name": "United States of America",
+                    "size": 32495,
+                    "children": [{
+                        "name": "California",
+                        "size": 3914
+                    }, {
+                        "name": "Texas",
+                        "size": 2746
+                    }, {
+                        "name": "Florida",
+                        "size": 2027
+                    }, {
+                        "name": "New York",
+                        "size": 1979
+                    }, {
+                        "name": "Illinois",
+                        "size": 1285
+                    }, {
+                        "name": "Pennsylvania",
+                        "size": 1280
+                    }, {
+                        "name": "Ohio",
+                        "size": 1161
+                    }, {
+                        "name": "Georgia",
+                        "size": 1021
+                    }, {
+                        "name": "North Carolina",
+                        "size": 1004
+                    }, {
+                        "name": "Michigan",
+                        "size": 992
+                    }, {
+                        "name": "New Jersey",
+                        "size": 895
+                    }, {
+                        "name": "Virginia",
+                        "size": 838
+                    }, {
+                        "name": "Washington",
+                        "size": 717
+                    }, {
+                        "name": "Arizona",
+                        "size": 682
+                    }, {
+                        "name": "Massachusetts",
+                        "size": 679
+                    }, {
+                        "name": "Indiana",
+                        "size": 661
+                    }, {
+                        "name": "Tennessee",
+                        "size": 660
+                    }, {
+                        "name": "Missouri",
+                        "size": 608
+                    }, {
+                        "name": "Maryland",
+                        "size": 600
+                    }, {
+                        "name": "Wisconsin",
+                        "size": 577
+                    }, {
+                        "name": "Minnesota",
+                        "size": 548
+                    }, {
+                        "name": "Colorado",
+                        "size": 545
+                    }, {
+                        "name": "South Carolina",
+                        "size": 489
+                    }, {
+                        "name": "Alabama",
+                        "size": 485
+                    }, {
+                        "name": "Louisiana",
+                        "size": 467
+                    }, {
+                        "name": "Kentucky",
+                        "size": 442
+                    }, {
+                        "name": "Oregon",
+                        "size": 402
+                    }, {
+                        "name": "Oklahoma",
+                        "size": 391
+                    }, {
+                        "name": "Connecticut",
+                        "size": 359
+                    }, {
+                        "name": "Puerto Rico",
+                        "size": 347
+                    }, {
+                        "name": "Iowa",
+                        "size": 312
+                    }, {
+                        "name": "Utah",
+                        "size": 299
+                    }, {
+                        "name": "Mississippi",
+                        "size": 299
+                    }, {
+                        "name": "Arkansas",
+                        "size": 297
+                    }, {
+                        "name": "Kansas",
+                        "size": 291
+                    }, {
+                        "name": "Nevada",
+                        "size": 289
+                    }, {
+                        "name": "New Mexico",
+                        "size": 208
+                    }, {
+                        "name": "Nebraska",
+                        "size": 189
+                    }, {
+                        "name": "West Virginia",
+                        "size": 184
+                    }, {
+                        "name": "Idaho",
+                        "size": 165
+                    }, {
+                        "name": "Hawaii",
+                        "size": 143
+                    }, {
+                        "name": "New Hampshire",
+                        "size": 133
+                    }, {
+                        "name": "Maine",
+                        "size": 132
+                    }, {
+                        "name": "Rhode Island",
+                        "size": 105
+                    }, {
+                        "name": "Montana",
+                        "size": 103
+                    }, {
+                        "name": "Delaware",
+                        "size": 94
+                    }, {
+                        "name": "South Dakota",
+                        "size": 85
+                    }, {
+                        "name": "North Dakota",
+                        "size": 75
+                    }, {
+                        "name": "Alaska",
+                        "size": 73
+                    }, {
+                        "name": "District of Columbia",
+                        "size": 67
+                    }, {
+                        "name": "Vermont",
+                        "size": 62
+                    }, {
+                        "name": "Wyoming",
+                        "size": 58
+                    }, {
+                        "name": "Guam",
+                        "size": 16
+                    }, {
+                        "name": "US Virgin Islands",
+                        "size": 10
+                    }, {
+                        "name": "American Samoa",
+                        "size": 5
+                    }]
+                }, {
+                    "name": "Mexico",
+                    "size": 12227
+                }]
+            }, {
+                "name": "[Other]",
+                "size": 8248,
+                "parentPop": "North America",
+                "parentSize": 45606,
+                "children": [{
+                        "name": "[Islands]",
+                        "size": 3574,
+                        "parentPop": "North America",
+                        "parentSize": 45606,
+                        "children": [{
+                            "name": "Bahamas",
+                            "size": 37
+                        }, {
+                            "name": "Barbados",
+                            "size": 28
+                        }, {
+                            "name": "Cuba",
+                            "size": 1123
+                        }, {
+                            "name": "Dominican Republic",
+                            "size": 1007
+                        }, {
+                            "name": "Haiti",
+                            "size": 1107
+                        }, {
+                            "name": "Jamaica",
+                            "size": 272
+                        }]
+
+
+
+                    }, {
+                        "name": "Belize",
+                        "size": 37
+                    }, {
+                        "name": "Costa Rica",
+                        "size": 489
+                    }, {
+                        "name": "El Salvador",
+                        "size": 652
+                    }, {
+                        "name": "Guatemala",
+                        "size": 1617
+                    }, {
+                        "name": "Honduras",
+                        "size": 872
+                    }, {
+                        "name": "Nicaragua",
+                        "size": 626
+                    }, {
+                        "name": "Panama",
+                        "size": 381
+                    }
+
+                ]
+            }]
+        }, {
+            "name": "Asia",
+            "size": 455232,
+            "children": [{
+                "name": "[East Asia]",
+                "size": 160857,
+                "parentPop": "Asia",
+                "parentSize": 455232,
+                "children": [{
+                    "name": "[Other]",
+                    "size": 22858,
+                    "parentPop": "Asia",
+                    "parentSize": 455232,
+                    "children": [{
+                        "name": "Japan",
+                        "size": 12695
+                    }, {
+                        "name": "Mongolia",
+                        "size": 311
+                    }, {
+                        "name": "South Korea",
+                        "size": 5080
+                    }, {
+                        "name": "North Korea",
+                        "size": 2421
+                    }, {
+                        "name": "Taiwan",
+                        "size": 2351
+                    }]
+                }, {
+                    "name": "China",
+                    "size": 137999
+                }]
+            }, {
+                "name": "[South Asia]",
+                "size": 174434,
+                "parentPop": "Asia",
+                "parentSize": 455232,
+                "children": [{
+                    "name": "Afghanistan",
+                    "size": 2765
+                }, {
+                    "name": "Bangladesh",
+                    "size": 16146
+                }, {
+                    "name": "India",
+                    "size": 130818
+                }, {
+                    "name": "Nepal",
+                    "size": 3098
+                }, {
+                    "name": "Pakistan",
+                    "size": 19487
+                }, {
+                    "name": "Sri Lanka",
+                    "size": 2120
+                }]
+            }, {
+                "name": "[Central Asia]",
+                "size": 6270,
+                "parentPop": "Asia",
+                "parentSize": 455232,
+                "children": [{
+                    "name": "Kazakhstan",
+                    "size": 1775
+                }, {
+                    "name": "Uzbekistan",
+                    "size": 3157
+                }, {
+                    "name": "Tajikistan",
+                    "size": 855
+                }, {
+                    "name": "Turkmenistan",
+                    "size": 475
+                }, {
+                    "name": "Kyrgyzstan",
+                    "size": 608
+                }]
+            }, {
+                "name": "[Southeast Asia]",
+                "size": 64191,
+                "parentPop": "Asia",
+                "parentSize": 455232,
+                "children": [{
+                    "name": "Brunei",
+                    "size": 41
+                }, {
+                    "name": "Cambodia",
+                    "size": 1562
+                }, {
+                    "name": "Indonesia",
+                    "size": 26058
+                }, {
+                    "name": "Laos",
+                    "size": 649
+                }, {
+                    "name": "Malaysia",
+                    "size": 3184
+                }, {
+                    "name": "Myanmar",
+                    "size": 5463
+                }, {
+                    "name": "Philippines",
+                    "size": 10334
+                }, {
+                    "name": "Singapore",
+                    "size": 560
+                }, {
+                    "name": "Thailand",
+                    "size": 6814
+                }, {
+                    "name": "Vietnam",
+                    "size": 9526
+                }, ]
+            }, {
+                "name": "[Western Asia]",
+                "size": 34167,
+                "parentPop": "Asia",
+                "parentSize": 455232,
+                "children": [{
+                    "name": "[Small Countries]",
+                    "size": 5000,
+                    "parentPop": "Asia",
+                    "parentSize": 455232,
+                    "children": [{
+                        "name": "Armenia",
+                        "size": 299
+                    }, {
+                        "name": "Bahrain",
+                        "size": 140
+                    }, {
+                        "name": "Qatar",
+                        "size": 261
+                    }, {
+                        "name": "Georgia",
+                        "size": 372
+                    }, {
+                        "name": "Kuwait",
+                        "size": 418
+                    }, {
+                        "name": "Palestine",
+                        "size": 481
+                    }, {
+                        "name": "Lebanon",
+                        "size": 598
+                    }, {
+                        "name": "Oman",
+                        "size": 449
+                    }, ]
+                }, {
+                    "name": "Azerbaijan",
+                    "size": 978
+                }, {
+                    "name": "Iran",
+                    "size": 7970
+                }, {
+                    "name": "Iraq",
+                    "size": 3678
+                }, {
+                    "name": "Israel",
+                    "size": 861
+                }, {
+                    "name": "Jordan",
+                    "size": 976
+                }, {
+                    "name": "Saudi Arabia",
+                    "size": 3224
+                }, {
+                    "name": "Syria",
+                    "size": 1856
+                }, {
+                    "name": "Turkey",
+                    "size": 7874
+                }, {
+                    "name": "United Arab Emirates",
+                    "size": 985
+                }, {
+                    "name": "Yemen",
+                    "size": 2747
+                }]
+            }, {
+                "name": "Russia",
+                "size": 14672
+            }, ]
+        },
+
+        {
+            "name": "Africa",
+            "size": 116467,
+            "children": [{
+                "name": "[North Africa]",
+                "size": 22579,
+                "parentPop": "Africa",
+                "parentSize": 116467,
+                "children": [{
+                    "name": "Algeria",
+                    "size": 4040
+                }, {
+                    "name": "Egypt",
+                    "size": 9197
+                }, {
+                    "name": "Libya",
+                    "size": 638
+                }, {
+                    "name": "Morocco",
+                    "size": 3414
+                }, {
+                    "name": "Sudan",
+                    "size": 4117
+                }, {
+                    "name": "Tunisia",
+                    "size": 1115
+                }, {
+                    "name": "Western Sahara",
+                    "size": 58
+                }]
+            }, {
+                "name": "[West Africa]",
+                "size": 35804,
+                "parentPop": "Africa",
+                "parentSize": 116467,
+                "children": [{
+                    "name": "[Small Countries]",
+                    "size": 1889,
+                    "parentPop": "Africa",
+                    "parentSize": 116467,
+                    "children": [{
+                        "name": "Togo",
+                        "size": 714
+                    }, {
+                        "name": "Cape Verde",
+                        "size": 53
+                    }, {
+                        "name": "Mauritania",
+                        "size": 372
+                    }, {
+                        "name": "Liberia",
+                        "size": 407
+                    }, {
+                        "name": "Gambia",
+                        "size": 188
+                    }, {
+                        "name": "Guinea-Bissau",
+                        "size": 155
+                    }]
+                }, {
+                    "name": "Mali",
+                    "size": 1834
+                }, {
+                    "name": "Senegal",
+                    "size": 1479
+                }, {
+                    "name": "Guinea",
+                    "size": 1295
+                }, {
+                    "name": "Sierra Leone",
+                    "size": 708
+                }, {
+                    "name": "Côte d'Ivoire",
+                    "size": 2032
+                }, {
+                    "name": "Nigeria",
+                    "size": 18698
+                }, {
+                    "name": "Niger",
+                    "size": 2071
+                }, {
+                    "name": "Ghana",
+                    "size": 2830
+                }, {
+                    "name": "Burkina Faso",
+                    "size": 1903
+                }, {
+                    "name": "Benin",
+                    "size": 1065
+                }]
+            }, {
+                "name": "[Central Africa]",
+                "size": 16101,
+                "parentPop": "Africa",
+                "parentSize": 116467,
+                "children": [{
+                    "name": "Angola",
+                    "size": 2578
+                }, {
+                    "name": "Cameroon",
+                    "size": 2271
+                }, {
+                    "name": "Central African Republic",
+                    "size": 499
+                }, {
+                    "name": "Chad",
+                    "size": 1449
+                }, {
+                    "name": "Dem. Rep. of the Congo",
+                    "size": 8511
+                }, {
+                    "name": "[Small Countries]",
+                    "size": 793,
+                    "parentPop": "Africa",
+                    "parentSize": 116467,
+                    "children": [{
+                        "name": "Republic of the Congo",
+                        "size": 474
+                    }, {
+                        "name": "Equatorial Guinea",
+                        "size": 122
+                    }, {
+                        "name": "Gabon",
+                        "size": 180
+                    }, {
+                        "name": "São Tomé and Príncipe",
+                        "size": 17
+                    }]
+                }]
+            }, {
+                "name": "[East Africa]",
+                "size": 37812,
+                "parentPop": "Africa",
+                "parentSize": 116467,
+                "children": [{
+                    "name": "[Small Countries]",
+                    "size": 840,
+                    "parentPop": "Africa",
+                    "parentSize": 116467,
+                    "children": [{
+                        "name": "Seychelles",
+                        "size": 9
+                    }, {
+                        "name": "Djibouti",
+                        "size": 90
+                    }, {
+                        "name": "Comoros",
+                        "size": 80
+                    }, {
+                        "name": "Mauritius",
+                        "size": 126
+                    }, {
+                        "name": "Eritrea",
+                        "size": 535
+                    }]
+                }, {
+                    "name": "Tanzania",
+                    "size": 5515
+                }, {
+                    "name": "Kenya",
+                    "size": 4725
+                }, {
+                    "name": "Uganda",
+                    "size": 3686
+                }, {
+                    "name": "Rwanda",
+                    "size": 1155
+                }, {
+                    "name": "Burundi",
+                    "size": 1011
+                }, {
+                    "name": "Somalia",
+                    "size": 1108
+                }, {
+                    "name": "Ethiopia",
+                    "size": 10185
+                }, {
+                    "name": "Mozambique",
+                    "size": 2642
+                }, {
+                    "name": "Madagascar",
+                    "size": 2243
+                }, {
+                    "name": "Malawi",
+                    "size": 1685
+                }, {
+                    "name": "Zambia",
+                    "size": 1593
+                }, {
+                    "name": "Zimbabwe",
+                    "size": 1424
+                }, ]
+            }, {
+                "name": "[Southern Africa]",
+                "size": 6349,
+                "parentPop": "Africa",
+                "parentSize": 116467,
+                "children": [{
+                    "name": "South Africa",
+                    "size": 5590
+                }, {
+                    "name": "Namibia",
+                    "size": 232
+                }, {
+                    "name": "Botswana",
+                    "size": 223
+                }, {
+                    "name": "Lesotho",
+                    "size": 191
+                }, {
+                    "name": "Swaziland",
+                    "size": 113
+                }]
+            }, ]
+        }, {
+            "name": "Europe",
+            "size": 60337,
+            "children": [{
+                    "name": "[Western Europe]",
+                    "size": 19507,
+                    "parentPop": "Europe",
+                    "parentSize": 60337,
+                    "children": [{
+                        "name":   "Germany",
+                        "size": 8217
+                    }, {
+                        "name":   "France",
+                        "size": 6682
+                    }, {
+                        "name":   "Switzerland",
+                        "size": 836
+                    }, {
+                        "name":   "Belgium",
+                        "size": 1133
+                    }, {
+                        "name":   "Austria",
+                        "size": 876
+                    }, {
+                        "name":   "Netherlands",
+                        "size": 1706
+                    }, {
+                        "name":   "Luxembourg",
+                        "size": 57
+                    }]
+                }, {
+                    "name": "[Eastern Europe]",
+                    "size": 18137,
+                    "parentPop": "Europe",
+                    "parentSize": 60337,
+                    "children": [{
+                        "name":   "[Small Countries]",
+                        "size": 2392,
+                        "parentPop": "Europe",
+                        "parentSize": 60337,
+                        "children": [{
+                            "name":   "Lithuania",
+                            "size": 285
+                        }, {
+                            "name":   "Latvia",
+                            "size": 195
+                        }, {
+                            "name":   "Estonia",
+                            "size": 131
+                        }, {
+                            "name":   "Transnistria",
+                            "size": 47
+                        }, {
+                            "name":   "Macedonia",
+                            "size": 207
+                        }, {
+                            "name":   "Slovenia",
+                            "size": 206
+                        }, {
+                            "name":   "Kosovo",
+                            "size": 183
+                        }, {
+                            "name":   "Montenegro",
+                            "size": 62
+                        }, {
+                            "name":   "Albania",
+                            "size": 288
+                        }, {
+                            "name":   "Bosnia and Herzegovina",
+                            "size": 353
+                        }, {
+                            "name":   "Georgia",
+                            "size": 372
+                        }]
+                    }, {
+                        "name":   "Poland",
+                        "size": 3842
+                    }, {
+                        "name":   "Belarus",
+                        "size": 950
+                    }, {
+                        "name":   "Ukraine",
+                        "size": 4263
+                    }, {
+                        "name":   "Hungary",
+                        "size": 983
+                    }, {
+                        "name":   "Romania",
+                        "size": 1976
+                    }, {
+                        "name":   "Moldova",
+                        "size": 355
+                    }, {
+                        "name":   "Serbia",
+                        "size": 707
+                    }, {
+                        "name":   "Czech Republic",
+                        "size": 1056
+                    }, {
+                        "name":   "Slovakia",
+                        "size": 542
+                    }, {
+                        "name":   "Bulgaria",
+                        "size": 715
+                    }, {
+                        "name":   "Croatia",
+                        "size": 419
+                    }]
+                }, {
+                    "name": "[Northern Europe]",
+                    "size": 2678,
+                    "parentPop": "Europe",
+                    "parentSize": 60337,
+                    "children": [{
+                        "name":   "Iceland",
+                        "size": 34
+                    }, {
+                        "name":   "Norway",
+                        "size": 525
+                    }, {
+                        "name":   "Sweden",
+                        "size": 995
+                    }, {
+                        "name":   "Finland",
+                        "size": 550
+                    }, {
+                        "name":   "Denmark",
+                        "size": 574
+                    }]
+                }, {
+                    "name":   "[Southern Europe]",
+                    "size": 13000,
+                    "parentPop": "Europe",
+                    "parentSize": 60337,
+                    "children": [{
+                        "name":   "[Small Countries]",
+                        "size": 134,
+                        "parentPop": "Europe",
+                        "parentSize": 60337,
+                        "children": [{
+                            "name":   "Cyprus",
+                            "size": 84
+                        }, {
+                            "name":   "Malta",
+                            "size": 42
+                        }, {
+                            "name":   "Andorra",
+                            "size": 8
+                        }]
+                    }, {
+                        "name":   "Spain",
+                        "size": 4681
+                    }, {
+                        "name":   "Greece",
+                        "size": 1085
+                    }, {
+                        "name":   "Portugal",
+                        "size": 1034
+                    }, {
+                        "name":   "Italy",
+                        "size": 6066
+                    }]
+                }, {
+                    "name": "[British Isles]",
+                    "size": 7015,
+                    "parentPop": "Europe",
+                    "parentSize": 60337,
+                    "children": [{
+                        "name":   "United Kingdom",
+                        "size": 6511
+                    }, {
+                        "name":   "[Other]",
+                        "size": 475,
+                        "parentPop": "Europe",
+                        "parentSize": 60337,
+                        "children": [{
+                            "name":   "Ireland",
+                            "size": 475
+                        }, {
+                            "name":   "Jersey",
+                            "size": 10
+                        }, {
+                            "name":   "Isle of Man",
+                            "size": 8
+                        }, {
+                            "name":   "Guernsey",
+                            "size": 6
+                        }, {
+                            "name":   "Faroe Islands",
+                            "size": 5
+                        }]
+                    }]
+                }
+
+            ]
+        }, {
+            "name": "South America",
+            "size": 23382,
+            "children": [{
+                "name": "[Small Countries]",
+                "size": 1161,
+                "parentPop": "South America",
+                "parentSize": 23382,
+                "children": [{
+                    "name":   "Uruguay",
+                    "size": 348
+                }, {
+                    "name":   "Guyana",
+                    "size": 74
+                }, {
+                    "name":   "Suriname",
+                    "size": 54
+                }, {
+                    "name":   "Paraguay",
+                    "size": 685
+                }]
+            }, {
+                "name":   "Brazil",
+                "size": 2069
+            }, {
+                "name":   "Colombia",
+                "size": 4893
+            }, {
+                "name":   "Argentina",
+                "size": 4385
+            }, {
+                "name":   "Peru",
+                "size": 3149
+            }, {
+                "name":   "Venezuela",
+                "size": 3148
+            }, {
+                "name":   "Chile",
+                "size": 1819
+            }, {
+                "name":   "Ecuador",
+                "size": 1662
+            }, {
+                "name":   "Bolivia",
+                "size": 1096
+            }]
+        }, {
+            "name": "Oceania",
+            "size": 4040,
+            "children": [{
+                "name":   "[Australasia]",
+                "size": 2951,
+                "parentPop": "Oceania",
+                "parentSize": 4040,
+                "children": [{
+                    "name":   "Australia",
+                    "size": 2427
+                }, {
+                    "name":   "New Zealand",
+                    "size": 473
+                }, {
+                    "name":   "Tonga",
+                    "size": 10
+                }, {
+                    "name":   "Kiribati",
+                    "size": 11
+                }, {
+                    "name":   "Tuvalu",
+                    "size": 1
+                }, {
+                    "name":   "Nauru",
+                    "size": 1
+                }, {
+                    "name":   "Vanuatu",
+                    "size": 28
+                }]
+            }, {
+                "name": "[Polynesia]",
+                "size": 55,
+                "parentPop": "Oceania",
+                "parentSize": 4040,
+                "children": [{
+                        "name":   "French Polynesia",
+                        "size": 27
+                    }, {
+                        "name":   "Cook Islands",
+                        "size": 2
+                    }, {
+                        "name":   "Wallis and Futuna",
+                        "size": 1
+                    }, {
+                        "name":   "American Samoa",
+                        "size": 6
+                    }, {
+                        "name":   "Samoa",
+                        "size": 19
+                    }
+
+                ]
+            }, {
+                "name": "[Melanesia]",
+                "size": 993,
+                "parentPop": "Oceania",
+                "parentSize": 4040,
+                "children": [{
+                    "name":   "Fiji",
+                    "size": 87
+                }, {
+                    "name":   "Papua New Guinea",
+                    "size": 815
+                }, {
+                    "name":   "Solomon Islands",
+                    "size": 64
+                }, {
+                    "name":   "New Caledonia",
+                    "size": 27
+                }]
+            }, {
+                "name": "[Micronesia]",
+                "size": 51,
+                "parentPop": "Oceania",
+                "parentSize": 4040,
+                "children": [{
+                    "name":   "Federated States of Micronesia",
+                    "size": 10
+                }, {
+                    "name":   "Guam",
+                    "size": 18
+                }, {
+                    "name":   "Marshall Islands",
+                    "size": 5
+                }, {
+                    "name":   "Northern Mariana Islands",
+                    "size": 6
+                }, {
+                    "name":   "Palau",
+                    "size": 2
+                }]
+            }]
+        },
+    ]
+};
+
+var ethnic_data = {
+    "Afghanistan": ["-Pashtun 42%", "-Tajik 27%", "-Hazara 9%", "-Uzbek 9%", "-Aimaks 4%", "-Turkmen 3%", "-Baloch 2%", "-others 4%"],
+    "Albania": ["-Albanian 95%", "-Greeks 3%", "-other 2%: Vlachs,, Gypsies", "-Serbs, Bulgarians"],
+    "Algeria": ["-Arab-Berber 99%", "-European less than 1%"],
+    "American Samoa": ["-Pacific Islander 92.6%", "(includes Samoan 88.9%,", "Tongan 2.9%, other .8%)", "-Asian 3.6% (includes Filipino 2.2%,", "other 1.4%)", "-mixed 2.7%", "other 1.2%"],
+    "Andorra": ["-Spanish 43%", "-Andorran 33%", "-Portuguese 11%", "-French 7%", "-other 6%"],
+    "Angola": ["-Ovimbundu 37%", "-Kimbundu 25%", "-Bakongo 13%", "-mestico (mixed European and Native African) 2%", "-European 1%", "-other 22%"],
+    "Antigua and Barbuda": ["-black", "-British", "-Portuguese", "-Lebanese", "-Syrian"],
+    "Argentina": ["-white (mostly Spanish", "and Italian) 97%", "-mestizo, Amerindian, other 3%"],
+    "Armenia": ["-Armenian 97.9%", "-Russian 0.5%", "-Kurds 1.3%", "-other 0.3%"],
+    "Australia": ["-Caucasian 92%", "-Asian 7%", "-aboriginal and other 1%"],
+    "Austria": ["-Austrians 91.1%", "-former Yugoslavs 4%", "-Turks 1.6%", "-German 0.9%", "-other 2.4%"],
+    "Azerbaijan": ["-Azeri 90.6%", "-Dagestani 2.2%", "-Russian 1.8%", "-Armenian 1.5%", "-other 3.9%"],
+    "Bahamas": ["-black 85%", "-white 12%", "-Asian and Hispanic 3%"],
+    "Bahrain": ["-Bahraini 62.4%", "-non-Bahraini 37.6%"],
+    "Bangladesh": ["-Bengali 98%", "-tribal groups", "-non-Bengali Muslims"],
+    "Barbados": ["-black 90%", "-white 4%", "-Asian and mixed 6%"],
+    "Belarus": ["-Belorussian 81.2%", "-Russian 11.4%", "-Polish 3.9%", "-Ukrainian 2.4%", "-other 1.1%"],
+    "Belgium": ["-Fleming 58%", "-Walloon 31%", "-mixed or other 11%"],
+    "Belize": ["-mestizo 48.7%", "-Creole 24.9%", "-Maya 10.6%", "-Garifuna 6.1%", "-other 9.7%"],
+    "Benin": ["-African 99%", "-European less than 1%"],
+    "Bhutan": ["-Bhote 50%", "-ethnic Nepalese 35%", "-indigenous or migrant tribes 15%"],
+    "Bolivia": ["-Quechua 30%", "-mestizo 30%", "-Aymara 25%", "-white 15%"],
+    "Bosnia and Herzegovina": ["-Bosniak 48%", "-Serb 37.1%", "-Croat 14.3%", "-other 0.6% "],
+    "Botswana": ["-Tswana (or Setswana) 79%", "-Kalanga 11%", "-Basarwa 3%", "-other (including Kgalagadi", "and white) 7%"],
+    "Brazil": ["-white 53.7%", "-mulatto 38.5%", "-black 6.2%", "-other (includes Japanese,", "Arab, Amerindian) 0.9%", "-unspecified 0.7%"],
+    "Brunei": ["-Malay 67%", "-Chinese 15%", "-indigenous 6%", "-other 12%"],
+    "Bulgaria": ["-Bulgarian 83.9%", "-Turk 9.4%", "-Roma 4.7%", "-other (including Macedonian,", "-Armenian, Tatar, Circassian) 2%"],
+    "Burkina Faso": ["-Mossi (over 40%)", "-Gurunsi", "-Senufo", "-Lobi", "-Bobo", "-Mande", "-Fulani"],
+    "Burundi": ["-Hutu (Bantu) 85%", "-Tutsi (Hamitic) 14%", "-Twa (Pygmy) 1%"],
+    "Cambodia": ["-Khmer 90%", "-Vietnamese 5%", "-Chinese 1%", "-other 4%"],
+    "Cameroon": ["-Cameroon Highlanders 31%", "-Equatorial Bantu 19%", "-Kirdi 11%", "-Fulani 10%", "-Northwest Bantu 8%", "-Eastern Nigritic 7%", "-other African 13%", "-non-African less than 1%"],
+    "Canada": ["-British Isles origin 28%", "-French origin 23%", "-other European 15%", "-indigenous Indian and Inuit 2%", "-other, mostly Asian, African,", "Arab 6%", "-mixed background 26%"],
+    "Cape Verde": ["-Creole (mulatto) 71%", "-African 28%", "-European 1%"],
+    "Central African Republic": ["-Baya 33%", "-Banda 27%", "-Mandjia 13%", "-Sara 10%", "-Mboum 7%", "-M'Baka 4%", "-Yakoma 4%", "-other 2%"],
+    "Chad": ["200 distinct groups", "-North and Center: mostly Muslim", "-South: mostly Christian or animist."],
+    "Chile": ["-white and white-Amerindian 95%", "-Amerindian 3%", "-other 2%"],
+    "China": ["-Han Chinese 91.9%", "-55 other ethnic groups", "(Zhuang, Uygur, Hui, miao, Yi,", "Mongo, Dong, Bai, Korean,", "Kazakh, Derung, Pumi) 8.1%"],
+    "Colombia": ["-mestizo 58%", "-white 20%", "-mulatto 14%", "-black 4%", "-mixed black-Amerindian 3%", "-Amerindian 1%"],
+    "Comoros": ["-Antalote", "-Cafre", "-Makoa", "-Oimatsaha", "-Sakalava"],
+    "Dem. Rep. of the Congo": ["-majority Bantu", "-Mongo, Luba, Kongo,", "Mangbetu-Azande tribes 45%"],
+    "Republic of the Congo": ["-Kongo 48%", "-Sangha 20%", "-M'Bochi 12%", "-Teke 17%", "-Europeans and other 3%"],
+    "Cook Islands": ["-Cook Island Maori", "(Polynesian) 81.3%", "-part Cook Island Maori 6.7%", "-other 11.9%"],
+    "Costa Rica": ["-white (including mestizo) 94%", "-black 3%", "-Amerindian 1%", "-Chinese 1%", "-other 1%"],
+    "Côte d'Ivoire": ["-Akan 42.1%", "-Voltaiques (Gur) 17.6%", "-Northern Mandes 16.5%", "-Krous 11%", "-Southern Mandes 10%", "-other 2.8%"],
+    "Croatia": ["-Croat 89.6%", "-Serb 4.5%", "-Bosniak 0.5%", "-Hungarian 0.4%", "-Slovene 0.3%", "-Czech 0.2%", "-Roma 0.2%; -Albanian 0.1%", "-Montenegrin 0.1; -others 4.1%"],
+    "Cuba": ["-mulatto 51%", "-white 37%", "-black 11%", "-Chinese 1%"],
+    "Cyprus": ["-Greek 77%", "-Turkish 18% (each concentrated", "almost exclusively in separate areas)", "-other 5%"],
+    "Czech Republic": ["-Czech 90.4%", "-Moravian 3.7%", "-Slovak 1.9%", "-other 4%"],
+    "Denmark": ["-Scandinavian", "-Inuit", "-Faroese", "-German", "-Turkish", "-Iranian", "-Somali"],
+    "Djibouti": ["-Somali 60%", "-Afar 35%", "-French", "-Arab", "-Ethiopian", "-Italian 5%"],
+    "Dominica": ["-black", "-mixed black and European", "-European", "-Syrian", "-Carib Amerindian"],
+    "Dominican Republic": ["-white 16%", "-black 11%", "-mixed 73%"],
+    "East Timor": ["-Austronesian (Malayo-Polynesian)", "-Papuan", "-small Chinese minority"],
+    "Ecuador": ["-mestizo (mixed Amerindian", "and white) 65%", "-Amerindian 25%", "-Spanish and others 7%", "-black 3%"],
+    "Egypt": ["-Egyptian 98%", "-Berber, Nubian, Bedouin, and Beja 1%", "-Greek", "-Armenian", "-other European (primarily Italian", "and French) 1%"],
+    "El Salvador": ["-mestizo 90%", "-white 9%", "-Amerindian 1%"],
+    "Equatorial Guinea": ["-Bioko (primarily Bubi,", "some Fernandinos)", "-Río Muni (primarily Fang)", "-less than 1,000 Europeans", "-mostly Spanish"],
+    "Eritrea": ["-ethnic Tigrinya 50%", "-Tigre and Kunama 40%", "-Afar 4%", "-Saho (Red Sea coast dwellers) 3%", "-other 3%"],
+    "Estonia": ["-Estonian 67.9%", "-Russian 25.6%", "-Ukrainian 2.1%", "-Belorussian 1.3%", "-Finn 0.9%", "-other 2.2%"],
+    "Ethiopia": ["-Oromo 40%", "-Amhara and Tigrean 32%", "-Sidamo 9%", "-Shankella 6%", "-Somali 6%", "-Afar 4%", "-Gurage 2%", "-other 1%"],
+    "Faroe Islands": ["-Faroese", "(mixed Scandinavian - Scottish)"],
+    "Federated States of Micronesia": ["Chuukese/Mortlockese 49.3%", "-Pohnpeian 29.8%", "-Kosraean 6.3%", "-Yapese 5.7%", "-Yap outer islanders 5.1%", "-Polynesian, Asian, or other 3.8%"],
+    "Fiji": ["-Fijian 51%", "-Indian 44%", "-European", "-other Pacific Islanders,", "overseas Chinese, and other 5%"],
+    "Finland": ["-Finn 93.4%", "-Swede 5.7%", "-Sami (Lapp) 0.1%", "-Roma 0.2%", "-Estonian 0.2%"],
+    "France": ["-Celtic and Latin with Teutonic", "-Slavic", "-North African", "-Southeast Asian", "-Basque minorities"],
+    "French Polynesia": ["-Polynesian 748%", "-Chinese 12%", "-local French 6%", "-metropolitan French 4%"],
+    "Gabon": ["-Bantu tribes, including four major", "tribal groupings: Fang, Punu,", "Nzeiby, Mbede (Obamba/Bateke)", "-other Africans and Europeans 10.8%"],
+    "Gambia": ["-Mandinka 42%", "-Fula 18%", "-Wolof 16%", "-Jola 10%", "-Serahuli 9%", "-other African 4%", "-non-African 1%"],
+    "Georgia": ["-Georgian 83.8%", "-Azeri 6.5%", "-Armenian 5.7%", "-Russian 1.5%", "-other 2.5%"],
+    "Germany": ["-German 91.5%", "-Turkish 2.4%", "-Italian 0.7%", "-Greek 0.4%", "-Polish 0.4%", "-other 4.6%"],
+    "Ghana": ["-Akan 44%", "-Moshi-Dagomba 16%", "-Ewe 13%", "-Ga 8%", "-Gurma 3%", "-Yoruba 1%", "-European and other 1.5%"],
+    "Greece": ["-Greek 98%", "-other 2%"],
+    "Grenada": ["-black 82%", "-mixed black and European 13%", "-European and East Indian 5%", "-traces of Arawak/Carib Amerindian"],
+    "Guam": ["-Chamorro 37.3%", "-Filipino 26.3%", "-white 7.1%", "-Chuukese 7%", "-Korean 2.2%", "-mixed 9.4%", "-other: 11%"],
+    "Guatemala": ["-Mestizo (Ladino) and European 59%", "-K'iche 9.1%", "-Kaqchikel 8.4%", "-Mam 7.9%", "-Q'eqchi 6.3%", "-other Mayan 8.6%", "-indigenous non-Mayan 0.2%", "-other 0.1%"],
+    "Guernsey": ["-British", "-Norman French"],
+    "Guinea": ["-Peuhl 40%", "-Malinke 30%", "-Susu 20%", "-smaller tribes 10%"],
+    "Guinea-Bissau": ["-Balanta 30%", "-Fula 20%", "-Manjaca 14%", "-Mandinga 13%", "-Papel 7%", "-European / mulatto less than 1%"],
+    "Guyana": ["-East Indian 50%", "-black 36%", "-Amerindian 7%", "-white, Chinese, and mixed 7%"],
+    "Haiti": ["-black 95%", "-mulatto and white 5%"],
+    "Honduras": ["-mestizo 90%", "-Amerindian 7%", "-black 2%", "-white 1%"],
+    "Hungary": ["-Hungarian 92.3%", "-Roma 1.9%", "-other or unknown 5.8%"],
+    "Iceland": ["-homogeneous mixture of", "Norse/Celtic descendants 94%", "-population of foreign origin 6%"],
+    "India": ["-Indo-Aryan 72%", "-Dravidian 25%", "-Mongoloid and other 3%"],
+    "Indonesia": ["-Javanese 45%", "-Sundanese 14%", "-Madurese 7.5%", "-coastal Malays 7.5%", "-other 26%"],
+    "Iran": ["-Persian 51%", "-Azerbaijani 24%", "-Gilaki and Mazandarani 8%", "-Kurd 7%; -Arab 3%", "-Lur 2%; -Baloch 2%", "-Turkmen 2%", "-other 1%"],
+    "Iraq": ["-Arab 75%–80%", "-Kurdish 15%–20%", "-Turkoman, Assyrian, or other 5%"],
+    "Ireland": ["-Celtic", "-English"],
+    "Isle of Man": ["-White 96.5%", "-Asian British 1.9%", "-other 1.5%"],
+    "Israel": ["-Jewish 80.1%", "(Europe/Americas/", "Oceania-born 32.1%,", "Israel-born 20.8%,", "Africa-born 14.6%, Asia-born 12.6%)", "-non-Jewish 19.9% (mostly Arab)"],
+    "Italy": ["-Italian", "-some German, French,", "and Slovene Italians"],
+    "Jamaica": ["-black 90.9%", "-East Indian 1.3%", "-white 0.2%", "-Chinese 0.2%", "-mixed 7.3%", "-other 0.1%"],
+    "Japan": ["-Japanese 99%", "-Korean, Chinese, Brazillian,", "Filipino, other 1%"],
+    "Jersey": ["-Jersey 46.4%", "-British 32.7%", "-Portuguese/Madeiran 8.2%", "-Polish 3.3%", "-Irish, French, and other white 7.1%", "-other 2.4%"],
+    "Jordan": ["-Arab 98%", "-Circassian 1%", "-Armenian 1%"],
+    "Kazakhstan": ["-Kazak (Qazaq) 53.4%", "-Russian 30%", "-Ukrainian 3.7%", "-Uzbek 2.5%", "-German 2.4%", "-Tatar 1.4%", "-Uygur 1.4%", "-other 4.9%"],
+    "Kenya": ["-Kikuyu 22%", "-Luhya 14%", "-Luo 13%", "-Kalenjin 12%; -Kamba 11%", "-Kisii 6%; -Meru 6%", "-other African 15%", "-Asian, European, and Arab 1%"],
+    "Kiribati": ["-Micronesian 98.8%", "-other 1.2%"],
+    "Kosovo": ["-Albanian 22%", "-Serbs 4%", "-others 4%"],
+    "North Korea": ["-racially homogeneous", "-small Chinese community", "-a few ethnic Japanese"],
+    "South Korea": ["-homogeneous (except for", "about 20,000 Chinese)"],
+    "Kuwait": ["-Kuwaiti 45%", "-other Arab 35%", "-South Asian 9%", "-Iranian 4%", "-other 7%"],
+    "Kyrgyzstan": ["-Kyrgyz 64.9%", "-Uzbek 13.8%", "-Russian 12.5%", "-Dungan 1.1%", "-Ukrainian 1%", "-Uygur 1%", "-other 5.7%"],
+    "Laos": ["-Lao Loum (lowland) 68%", "-Lao Theung (upland) 22%", "-Lao Soung (highland) including the", "Hmong (“Meo”) and the", "Yao (Mien) 9%", "-ethnic Vietnamese/Chinese 1%"],
+    "Latvia": ["-Latvian 57.7%", "-Russian 29.6%", "-Belorussian 4.1%", "-Ukrainian 2.7%", "-Polish 2.5%", "-Lithuanian 1.4%", "-other 2%"],
+    "Lebanon": ["-Arab 95%", "-Armenian 4%", "-other 1%"],
+    "Lesotho": ["-Sotho 99.7%", "-Europeans, Asians, and other 0.3%"],
+    "Liberia": ["-indigenous African tribes 95%", "(including Kpelle, Bassa, Gio, Kru,", "Grebo, Mano, Krahn, Gola, Gbandi,", "Loma, Kissi, Vai, Bella, Mandingo,", "and Mende)", "-Americo-Liberians 2.5%", "-Congo People 2.5%"],
+    "Libya": ["-Berber and Arab 97%", "-Greeks; -Maltese", "-Italians; -Egyptians", "-Pakistanis", "-Turks", "-Indians", "-Tunisians"],
+    "Liechtenstein": ["-Alemannic 86%; Italian, Turkish, and other 14%"],
+    "Lithuania": ["-Lithuanian 83.4%", "-Polish 6.7%", "-Russian 6.3%", "-other or unspecified 3.6%"],
+    "Luxembourg": ["-Celtic base (with French and", "German blend)", "-Portuguese", "-Italian", "-Slavs (from Montenegro, Albania,", "Kosovo)", "-European (guest and worker", "residents)"],
+    "Macedonia": ["-Macedonian 64.2%", "-Albanian 25.2%", "-Turkish 3.8%", "-Roma (Gypsy) 2.7%", "-Serb 1.8%", "-other 2.2%"],
+    "Madagascar": ["-Malayo-Indonesian (Merina and", "related Betsileo)", "-Côtiers (mixed African,", "Malayo-Indonesian, and Arab", "ancestry: Betsimisaraka, Tsimihety,", "Antaisaka, Sakalava)", "-French; -Indian", "-Creole; -Comoran"],
+    "Malawi": ["-Chewa; -Nyanja", "-Tumbuko; -Yao", "-Lomwe; -Sena", "-Tonga; -Ngoni", "-Ngonde", "-Asian", "-European"],
+    "Malaysia": ["-Malay 50.4%", "-Chinese 23.7%", "-Indigenous 11%", "-Indian 7.1%", "-others 7.8%"],
+    "Maldives": ["-South Indians", "-Sinhalese", "-Arabs"],
+    "Mali": ["-Mande 50% (Bambara, Malinke,", "Sarakole)", "-Peul 17%", "-Voltaic 12%", "-Tuareg and Moor 10%", "-Songhai 6%", "-other 5%"],
+    "Malta": ["-Maltese (descendants of ancient", "Carthaginians and Phoenicians", "with strong elements of Italian", "and other Mediterranean stock)"],
+    "Marshall Islands": ["-Marshallese 92.1%", "-mixed Marshallese 5.9%", "-other 2%"],
+    "Mauritania": ["-mixed Maur/black 40%", "-Maur 30%", "-black 30%"],
+    "Mauritius": ["-Indo-Mauritian 68%", "-Creole 27%", "-Sino-Mauritian 3%", "-Franco-Mauritian 2%"],
+    "Mexico": ["-mestizo (Amerindian-Spanish) 60%", "-Amerindian or predominantly", "Amerindian 30%", "-white 9%", "-other 1%"],
+    "Micronesia": ["-nine ethnic Micronesian and Polynesian groups"],
+    "Moldova": ["-Moldavian/Romanian 78.2%", "-Ukrainian 8.4%", "-Russian 5.8%", "-Gagauz 4.4%", "-Bulgarian 1.9%", "-other 1.3%"],
+    "Monaco": ["-French 47%", "-Monegasque 16%", "-Italian 16%", "-other 21%"],
+    "Mongolia": ["-Mongol (mostly Khalkha) 94.9%", "-Turkic (mostly Kazak) 5%", "-other (including Chinese", "and Russian) 0.1%"],
+    "Montenegro": ["-Montenegrin 43%", "-Serbian 32%", "-Bosniak 8%", "-Albanian 5%", "-other (Muslims, Croats,", "-Roma) 12%"],
+    "Morocco": ["-Arab-Berber 99.1%", "-Jewish 0.2%", "-other 0.7%"],
+    "Mozambique": ["-indigenous tribal groups 99.66%", "(Shangaan, Chokwe, Manyika", "Sena, Makua)", "-Europeans 0.06%", "-Euro-Africans 0.2%", "-Indians 0.08%"],
+    "Myanmar": ["-Burman 68%", "-Shan 9%", "-Karen 7%", "-Rakhine 4%", "-Chinese 3%", "-Mon 2%", "-Indian 2%", "-other 5%"],
+    "Namibia": ["-black 87.5%", "-white 6%", "-mixed 6.5%"],
+    "Nauru": ["-Nauruan 58%", "-other Pacific Islander 26%", "-Chinese 8%", "-European 8%"],
+    "Nepal": ["-Brahman-Hill 12.5%", "-Chetri 15.5%; -Magar 7%", "-Tharu 6.6%; -Tamang 5.5%", "-Newar 5.4%; -Muslim 4.2%", "-Kami 3.9%; -Yadav 3.9%", "-other 32.7%", "-unspecified 2.8%"],
+    "Netherlands": ["-Dutch 83%", "-other 17% (9% of non-Western", "origin, mainly Turks, Moroccans,", "Antilleans, Surinamese, Indonesians) "],
+    "New Caledonia": ["-Kanak 40.3%", "-European 29.2%", "-Futunian 8.7%", "-Tahitian 2%", "-Indonesian 1.6%", "-Vietnamese 1%", "-other 17.1%"],
+    "New Zealand": ["-European 69.8%", "-Maori 7.9%", "-Pacific Islander 4.4%", "-Asian 5.7%", "-other 0.5%", "-mixed 7.8%", "-unspecified 3.8%"],
+    "Nicaragua": ["-mestizo 69%", "-white 17%", "-black 9%", "-Amerindian 5%"],
+    "Niger": ["-Hausa 56%", "-Djerma 22%", "-Fula 8.5%", "-Tuareg 8%", "-Beri Beri (Kanouri) 4.3%", "-Arab, Toubou, Gourmantche 1.2%", "-about 1,200 French expatriates"],
+    "Nigeria": ["250+ ethnic groups including:", "-Hausa and Fulani 29%", "-Yoruba 21%", "-Ibo 18%", "-Ijaw 10%", "-Kanuri 4%", "-Ibibio 3.5%", "-Tiv 2.5%"],
+    "Northern Mariana Islands": ["-Asian 50%", "-Native Hawaiian or other", "Pacific Islander 34.9%", "-mixed 12.7%", "-other 2.5%"],
+    "Norway": ["-Norwegian", "-20,000 Sami"],
+    "Oman": ["-Arab", "-Baluchi", "-South Asian (Indian", "-Pakistani", "-Sri Lankan", "-Bangladeshi)", "-African"],
+    "Pakistan": ["-Punjabi", "-Sindhi", "-Pashtun (Pathan)", "-Baloch", "-Muhajir (immigrants from India", "and their descendants)"],
+    "Palau": ["-Palauan 69.9%", "-Filipino 15.3%", "-Chinese 4.9%", "-other Asian 2.4%", "-white 1.9%", "-Carolinian 1.4%", "-other Micronesian 1.1%", "-other or unspecified 3.2%"],
+    "Palestine": ["-West Bank: Palestinian Arab", "and other 83%; Jewish 17%", "-Gaza Strip: Palestinian Arab", "and other 99.4%; Jewish 0.6%"],
+    "Panama": ["-mestizo 70%", "-Amerindian and mixed (West Indian) 14%", "-white 10%", "-Indian 6%"],
+    "Papua New Guinea": ["-Melanesian", "-Papuan", "-Negrito", "-Micronesian", "-Polynesian"],
+    "Paraguay": ["-mestizo 95%"],
+    "Peru": ["-Amerindian 45%", "-mestizo 37%", "-white 15%", "-black, Japanese,", "Chinese, and other 3%"],
+    "Philippines": ["-Tagalog 28.1%", "-Cebuano 13.1%", "-Ilocano 9%", "-Bisaya/Binisaya 7.6%", "-Hiligaynon Ilonggo 7.5%", "-Bikol 6%", "-Waray 3.4%", "-other 25.3%"],
+    "Poland": ["-Polish 96.7%", "-German 0.4%", "-Belorussian 0.1%", "-Ukrainian 0.1%", "-other 2.7%"],
+    "Portugal": ["-homogeneous Mediterranean stock", "-less than 100,000 citizens of black", "African descent who immigrated to", "mainland during decolonization", "-East Europeans have", "entered since 1990"],
+    "Qatar": ["-Arab 40%", "-Pakistani 18%", "-Indian 18%", "-Iranian 10%", "-other 14%"],
+    "Romania": ["-Romanian 89.5%", "-Hungarian 6.6%", "-Roma (Gyspy) 2.5%", "-Ukrainian 0.3%", "-German 0.3%", "-Russian 0.2%", "-Turkish 0.2%", "-other 0.4%"],
+    "Russia": ["-Russian 79.8%", "-Tatar 3.8%", "-Ukrainian 2%", "-Bashkir 1.2%", "-Chuvash 1.1%", "-other or unspecified 12.1%"],
+    "Rwanda": ["-Hutu 84%", "-Tutsi 15%", "-Twa (Pygmoid) 1%"],
+    "St. Kitts and Nevis": ["-predominantly black; some British, Portuguese, and Lebanese"],
+    "St. Lucia": ["-black 90%", "-mixed 6%", "-East Indian 3%", "-white 1%"],
+    "St. Vincent and the Grenadines": ["-black 66%", "-mixed 19%", "-East Indian 6%", "-Carib Amerindian 2%", "-other 7%"],
+    "Samoa": ["-Samoan 92.6%", "-Euronesians 7% (persons of", "European and Polynesian blood)", "-Europeans 0.4%"],
+    "San Marino": ["-Sammarinese", "-Italian"],
+    "São Tomé and Príncipe": ["-mestico (mixed European and", "native African)", "-angolares (descendants of", "Angolan slaves)", "-forros (descendants of freed slaves)", "-servicais (contract laborers from", "Angola, Mozambique,", "and Cape Verde)"],
+    "Saudi Arabia": ["-Arab 90%", "-Afro-Asian 10%"],
+    "Senegal": ["-Wolof 43.3%", "-Fulani 23.8%", "-Serer 14.7%", "-Diola 3.7%", "-Mandingo 3%", "-Soninke 1.1%", "-European and Lebanese 1%", "-other 9.4%"],
+    "Serbia": ["-Serb 66%", "-Albanian 17%", "-Hungarian 3.5%", "-other 13.5%"],
+    "Seychelles": ["-mixed French, African,", "Indian, Chinese, and Arab"],
+    "Sierra Leone": ["20 native African tribes 90%", "(Temne 30%, Mende 30%, other 30%)", "-Creole (Krio) 10%", "-refugees from Liberia's recent civil war", "-small numbers of Europeans,", "Lebanese, Pakistanis, and Indians"],
+    "Singapore": ["-Chinese 76.8%", "-Malay 13.9%", "-Indian 7.9%", "-other 1.4%"],
+    "Slovakia": ["-Slovak 85.8%", "-Hungarian 9.7%", "-Roma 1.7%", "-Ruthenian/Ukrainian 1%", "-other and unspecified 1.8%"],
+    "Slovenia": ["-Slovene 93.1%", "-Croat 1.8%", "-Serb 2%", "-Bosniak 1.1%", "-other or unspecified 12%"],
+    "Solomon Islands": ["-Melanesian 94.5%", "-Polynesian 3%", "-Micronesian 1.2%", "-other 1.1%", "-unspecified 0.2%"],
+    "Somalia": ["-Somali 85%", "-Bantu and others 15%", "(including 30,000 Arabs)"],
+    "South Africa": ["-black African 79%", "-white 9.6%", "-colored 8.9%", "-Indian/Asian 2.5%"],
+    "Spain": ["-composite of Mediterranean", "and Nordic types"],
+    "Sri Lanka": ["-Sinhalese 73.8%", "-Sri Lankan Moors 7.2%", "-Indian Tamil 4.6%", "-Sri Lankan Tamil 3.9%", "-other 0.5%", "-unspecified 10%"],
+    "Sudan": ["-black 52%", "-Arab 39%", "-Beja 6%", "-foreigners 2%", "-other 1%"],
+    "Suriname": ["-East Indians (Hindustanis) 37%", "-Creole (mixed white and black) 31%", "-Javanese 15%", "“Bush Negroes” (also known", "as Maroons) 10%", "-Amerindian 2%", "-Chinese 2%", "-white 1%; -other 2%"],
+    "Swaziland": ["-African 97%", "-European 3%"],
+    "Sweden": ["-indigenous population:", "Swedes with Finnish and", "Sami minorities", "-foreign-born or", "first-generation immigrants:", "Finns, Yugoslavs, Danes", "Norwegians, Greeks", "Turks"],
+    "Switzerland": ["-German 65%", "-French 18%", "-Italian 10%", "-Romansch 1%", "-other 6%"],
+    "Syria": ["-Arab 90.3%", "-Kurds", "-Armenians", "-and other 9.7%"],
+    "Taiwan": ["-Taiwanese (including Hakka) 84%", "-mainland Chinese 14%", "-aborigine 2%"],
+    "Tajikistan": ["-Tajik 79%", "-Uzbek 15.3%", "-Russian 1.1%", "-Kyrgyz 1.1%", "-other 2.6%"],
+    "Tanzania": ["-mainland: native African 99%", "(includes 95% Bantu)", "-Asian, European, and Arab 1%"],
+    "Thailand": ["-Thai 75%", "-Chinese 14%", "-other 11%"],
+    "Togo": ["-native African (37 tribes; largest and", "most important are Ewe, Mina,", "and Kabre) 99%", "-European and Syrian-Lebanese", "less than 1%"],
+    "Tonga": ["-Polynesian", "-European"],
+    "Transnistria": ["-Moldovan 31.9%", "-Ukrainian 28.8%", "-Russian 30.4%", "-Bulgurian 2.5%", "-Polish 2%", "-other 6.4%"],
+    "Trinidad and Tobago": ["-Indian (South Asian) 40%", "-African 37.5%", "-mixed 20.5%", "-other 1.2%", "-unspecified 0.8%"],
+    "Tunisia": ["-Arab-Berber 98%", "-European 1%", "-Jewish and other 1%"],
+    "Turkey": ["-Turkish 80%", "-Kurdish 20% (estimated)"],
+    "Turkmenistan": ["-Turkmen 85%", "-Uzbek 5%", "-Russian 4%", "-other 6%"],
+    "Tuvalu": ["-Polynesian 96%", "-Micronesian 4%"],
+    "Uganda": ["-Baganda 17%; -Ankole 8%", "-Basoga 8%; -Iteso 8%", "-Bakiga 7%; -Langi 6%", "-Rwanda 6%; -Bagisu 5%", "-Acholi 4%; -Lugbara 4%", "-Batoro 3%; -Bunyoro 3%", "-Alur 2%; -Bagwere 2%", "-Bakonjo 2%; -Jopodhola 2%"],
+    "Ukraine": ["-Ukrainian 77.8%", "-Russian 17.3%; -Belorussian 0.6%", "-Moldovan 0.5%", "-Crimean Tatar 0.5%", "-Bulgarian 0.4%; -Hungarian 0.3%", "-Romanian 0.3%; -Polish 0.3%", "-Jewish 0.2%; -other 1.8%"],
+    "United Arab Emirates": ["-Emiri 19%", "-other Arab and Iranian 23%", "-South Asian 50%", "-other expatriates (includes", "Westerners and East Asians) 8%"],
+    "United Kingdom": ["-English 83.6%; -Scottish 8.6%", "-Welsh 4.9%; -Northern Irish 2.9%", "-black 2%; -Indian 1.8%", "-Pakistani 1.3%", "-mixed 1.2%", "-other 1.6%"],
+    "United States of America": ["-white 75.1%", "-black 12.3%", "Asian 3.6%", "-American Indian/Alaska Native 0.9%", "-Native Hawaiian and other Pacific", "Islander 0.1%", "-other 5.5%", "-Hispanic origin 12.5%"],
+    "Uruguay": ["-white 88%", "-mestizo 8%", "-black 4%"],
+    "Uzbekistan": ["-Uzbek 80%", "-Russian 5.5%", "-Tajik 5%", "-Kazak 3%", "-Karakalpak 2.5%", "-Tatar 1.5%", "-other 2.5%"],
+    "Vanuatu": ["-Ni-Vanuatu 98.5%", "-other 1.5%"],
+    "Vatican City": ["-Italian", "-Swiss", "-other"],
+    "Venezuela": ["-Spanish", "-Italian", "-Portuguese", "-Arab", "-German", "-African", "-indigenous people"],
+    "Vietnam": ["-Kinh (Viet) 86.2%", "-Tay 1.9%", "-Thai 1.7%", "-Muong 1.5%", "-Khome 1.4%; -Hoa 1.1%", "-Nun 1.1%; -Hmong 1%", "-others 4.1%"],
+    "Wallis and Futuna": ["-Polynesian"],
+    "Western Sahara": ["-Arab", "-Berber"],
+    "Yemen": ["-predominantly Arab; but", "also Afro-Arab", "-South Asians", "-Europeans"],
+    "Zambia": ["-African 98.7%", "-European 1.1%", "-other 0.2%"],
+    "Zimbabwe": ["-African 98% (Shona 82%", "-Ndebele 14%", "-other 2%)", "-mixed and Asian 1%", "-white less than 1%"]
+};
+
+fflare = {
+
+    "name": "NA",
+    "size": 10000,
+    "children": [{
+        "name": "test1",
+        "size": 5000,
+        "children": [{
+            "name": "[test3]",
+            "size": 5000,
+            "children": [{
+                "name": "test4",
+                "size": 5000
+            }, {
+                "name": "test5",
+                "size": 1
+            }]
+        }]
+    }, {
+        "name": "test2",
+        "size": 5000
+    }]
+
+}

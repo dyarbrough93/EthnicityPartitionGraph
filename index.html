@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+    circle,
+    path {
+        cursor: pointer;
+    }
+    
+    circle {
+        fill: none;
+        pointer-events: all;
+    }
+</style>
+
+<body>
+    <script src="d3.v3.min.js"></script>
+    <script src="flare.json"></script>
+    <script>
+        var margin = {
+                top: 550,
+                right: 550,
+                bottom: 550,
+                left: 550
+            },
+            radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 100;
+
+        var hue = d3.scale.category10();
+
+        var luminance = d3.scale.sqrt()
+            .domain([0, 1e6])
+            .clamp(true)
+            .range([90, 20]);
+
+        var svg = d3.select("body")
+            .append("center")
+            .append("svg")
+            .attr("width", margin.left + margin.right)
+            .attr("height", margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var partition = d3.layout.partition().sort(function(a, b) {
+            return d3.ascending(a.name, b.name);
+        }).size([2 * Math.PI, radius]);
+
+        var arc = d3.svg.arc().startAngle(function(d) {
+            return d.x;
+        }).endAngle(function(d) {
+            return d.x + d.dx;
+        }).padAngle(.01).padRadius(radius / 3).innerRadius(function(d) {
+            return radius / 3 * d.depth;
+        }).outerRadius(function(d) {
+            return radius / 3 * (d.depth + 1) - 1;
+        });
+
+        // Compute the initial layout on the entire tree to sum sizes.
+        // Also compute the full name and fill color for each node,
+        // and stash the children so they can be restored as we descend.
+        partition.value(function(d) {
+            return d.size;
+        }).nodes(flare).forEach(function(d) {
+            d._children = d.children;
+            d.sum = d.value;
+            d.key = key(d);
+            d.fill = fill(d);
+        });
+
+        // Now redefine the value function to use the previously-computed sum.
+        partition.children(function(d, depth) {
+            return depth < 2 ? d._children : null;
+        }).value(function(d) {
+            return d.sum;
+        });
+
+        var test = -6;
+
+        var center = svg.append("circle")
+            .attr("r", radius / 3)
+            .on("click", function(p) {
+
+                zoomOut(p);
+
+                if (!p.parent) return;
+                navLoc.text(getLocPath(p.parent, ""));
+                navLoc.attr("dx", navLoc.text().length * test);
+
+            });
+
+        svg.append("g")
+            .attr("id", "centerText");
+
+        var navLoc = svg.append("text")
+            .attr("dy", -500)
+            .attr("dx", -50)
+            .attr("font-weight", "bold")
+            .attr("font-size", "30")
+            .attr("id", "navLoc")
+            .text("World");
+
+        var path = svg.selectAll("path")
+            .data(partition.nodes(flare).slice(1))
+            .enter().append("path")
+            .attr("class", "donutArcSlices")
+            .attr("d", arc)
+            .style("fill", function(d) {
+                return d.fill;
+            }).each(function(d, i) {
+
+                this._current = updateArc(d);
+
+                if (d.parent.name !== flare.name)
+                    return;
+
+                if ((d.size / d.parent.size) * 100 < 5)
+                    return;
+
+                //A regular expression that captures all in between the start of a string (denoted by ^) 
+                //and the first capital letter L
+                var firstArcSection = /(^.+?)L/;
+
+                //The [1] gives back the expression between the () (thus not the L as well) 
+                //which is exactly the arc statement
+                var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
+                //Replace all the comma's so that IE can handle it -_-
+                //The g after the / is a modifier that "find all matches rather than stopping after the first match"
+                newArc = newArc.replace(/,/g, " ");
+
+                //Create a new invisible arc that the text can flow along
+                svg.append("path")
+                    .attr("class", "hiddenDonutArcs")
+                    .attr("id", "donutArc" + i)
+                    .attr("d", newArc)
+                    .style("fill", "none");
+
+
+            }).on("click", function(p) {
+
+                navLoc.text(getLocPath(p.depth > 1 ? p.parent : p, ""));
+                navLoc.attr("dx", navLoc.text().length * test);
+
+                path.on("mouseover", null)
+                    .on("mouseout", null);
+
+                mouseout();
+
+                zoomIn(p);
+            })
+            .on("mouseover", function(d, i) {
+                mouseover(d, i, this);
+            })
+            .on("mouseout", function(d, i) {
+                mouseout(d, i, this);
+            });
+
+        svg.selectAll(".donutText")
+            .data(partition.nodes(flare).slice(1))
+            .enter().append("text")
+            .attr("class", "donutText")
+            .attr("dy", 80) //Move the text down
+            .append("textPath")
+            .attr("startOffset", "50%")
+            .style("text-anchor", "middle")
+            .attr("xlink:href", function(d, i) {
+                return "#donutArc" + i;
+            }).text(function(d) {
+                return d.name;
+            });
+
+        function getLocPath(d, str) {
+
+            if (d.name === "World") return d.name + str;
+
+            str = "->" + d.name + str;
+            str = getLocPath(d.parent, str);
+            return str;
+
+        }
+
+        function zoomIn(p) {
+            if (p.depth > 1) p = p.parent;
+            if (!p.children) return;
+
+            zoom(p, p);
+        }
+
+        function zoomOut(p) {
+            if (!p.parent) return;
+            zoom(p.parent, p);
+
+        }
+        // Zoom to the specified new flare.
+        function zoom(flare, p) {
+
+
+
+            if (document.documentElement.__transition__) return;
+            // Rescale outside angles to match the new layout.
+            var enterArc, exitArc, outsideAngle = d3.scale.linear().domain([0, 2 * Math.PI]);
+
+            function insideArc(d) {
+                return p.key > d.key ? {
+                    depth: d.depth - 1,
+                    x: 0,
+                    dx: 0
+                } : p.key < d.key ? {
+                    depth: d.depth - 1,
+                    x: 2 * Math.PI,
+                    dx: 0
+                } : {
+                    depth: 0,
+                    x: 0,
+                    dx: 2 * Math.PI
+                };
+            }
+
+            function outsideArc(d) {
+                return {
+                    depth: d.depth + 1,
+                    x: outsideAngle(d.x),
+                    dx: outsideAngle(d.x + d.dx) - outsideAngle(d.x)
+                };
+            }
+
+            center.datum(flare);
+
+            partition.value(function(d, depth) {
+
+                return d.size;
+
+            });
+
+            // When zooming in, arcs enter from the outside and exit to the inside.
+            // Entering outside arcs start from the old layout.
+            if (flare === p) enterArc = outsideArc, exitArc = insideArc, outsideAngle.range([p.x, p.x + p.dx]);
+            path = path.data(partition.nodes(flare).slice(1), function(d) {
+                return d.key;
+            });
+
+            svg.selectAll('.hiddenDonutArcs').remove();
+
+            // When zooming out, arcs enter from the inside and exit to the outside.
+            // Exiting outside arcs transition to the new layout.
+            if (flare !== p) enterArc = insideArc, exitArc = outsideArc, outsideAngle.range([p.x, p.x + p.dx]);
+            d3.transition().duration(d3.event.altKey ? 7500 : 750).each(function() {
+
+                path.exit().transition().style("fill-opacity", function(d) {
+                    return d.depth === 1 + (flare === p) ? 1 : 0;
+                }).attrTween("d", function(d) {
+                    return arcTween.call(this, exitArc(d));
+                }).remove();
+
+                path.enter()
+                    .append("path")
+                    .attr("class", "donutArcSlices")
+                    .style("fill-opacity", function(d) {
+                        return d.depth === 2 - (flare === p) ? 1 : 0;
+                    }).style("fill", function(d) {
+                        return d.fill;
+                    })
+                    .on("click", function(p) {
+
+                        zoomIn(p);
+                        
+                        navLoc.text(getLocPath(p.depth > 1 ? p.parent : p, ""));
+                        navLoc.attr("dx", navLoc.text().length * test);
+
+                    }).each(function(d) {
+                        this._current = enterArc(d);
+                        mouseout();
+                    });
+
+                path.transition()
+                    .style("fill-opacity", 1)
+                    .attrTween("d", function(d) {
+                        return arcTween.call(this, updateArc(d));
+                    });
+
+
+
+            }).each("end", function() {
+
+                mouseout();
+
+                path.each(function(d, i) {
+
+                        if (d.parent.name !== flare.name)
+                            return;
+
+                        var pct = (d.size / d.parent.size) * 100;
+
+                        if (d.name.length / pct > 2.25)
+                            return;
+
+                        //A regular expression that captures all in between the start of a string (denoted by ^) 
+                        //and the first capital letter L
+                        var firstArcSection = /(^.+?)L/;
+
+                        //The [1] gives back the expression between the () (thus not the L as well) 
+                        //which is exactly the arc statement
+                        var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
+                        //Replace all the comma's so that IE can handle it -_-
+                        //The g after the / is a modifier that "find all matches rather than stopping after the first match"
+                        newArc = newArc.replace(/,/g, " ");
+
+                        //Create a new invisible arc that the text can flow along
+                        path.append("path")
+                            .attr("class", "hiddenDonutArcs")
+                            .attr("id", "donutArc" + i)
+                            .attr("d", newArc)
+                            .style("fill", "none");
+
+                    })
+                    .on("mouseover", function(d, i) {
+                        mouseover(d, i, this);
+                    })
+                    .on("mouseout", function(d, i) {
+                        mouseout(d, i, this);
+                    });
+            });
+
+            svg.selectAll(".donutText").remove();
+
+            svg.selectAll(".hiddenDonutArcs")
+                .data(partition.nodes(flare).slice(1))
+                .enter().append("text")
+                .attr("class", "donutText")
+                .attr("dy", 80) //Move the text down
+                .append("textPath")
+                .attr("startOffset", "50%")
+                .style("text-anchor", "middle")
+                .attr("xlink:href", function(d, i) {
+                    return "#donutArc" + i;
+                }).text(function(d) {
+                    return d.name;
+                });
+
+        }
+
+        function mouseover(d, i, _this) {
+            
+            d3.select(_this).style("fill-opacity", 0.5);
+            
+            svg.select("#centerText")
+                .append("text")
+                .attr("font-weight", "bold")
+                .text(d.name)
+                .attr("dx", -3.35 * d.name.length - 10)
+                .attr("dy", -95)
+                .attr("id", "centerTextName");
+
+            svg.select('#centerText')
+                .append('text')
+                .text(function() {
+
+                    if (d.parent.parentPop) {
+
+                        return '% pop (of ' + d.parent.parentPop + '): ' + ((d.size / d.parent.parentSize) * 100).toFixed(2) + '%';
+
+                    } else
+                        return '% pop (of ' + d.parent.name + '): ' + ((d.size / d.parent.size) * 100).toFixed(2) + '%';
+
+                })
+                .attr("dx", -105)
+                .attr("dy", -65)
+                .attr("id", "centerTextPop");
+
+
+            if (ethnic_data[d.name]) {
+
+                ethnic_data[d.name].forEach(function(word, i) {
+
+                    svg.select('#centerText')
+                        .append('text')
+                        .text(word)
+                        .attr("dx", -110)
+                        .attr("dy", (i * 20) - 35)
+                        .attr("class", "centerTextEthn");
+
+
+                });
+
+            } else {
+
+                if (d.name !== "North America" && d.name !== "Europe" && d.name !== "Asia" && d.name !== "Africa" && d.name !== "Oceania" && d.name !== "South America");
+
+            }
+
+        }
+
+        function mouseout(d, i, _this) {
+
+            d3.select(_this).style("fill-opacity", 1);
+            svg.select("#centerTextName").remove();
+            svg.select("#centerTextPop").remove();
+            svg.selectAll(".centerTextEthn").remove();
+
+        }
+
+        function key(d) {
+            var k = [],
+                p = d;
+            while (p.depth) k.push(p.name), p = p.parent;
+            return k.reverse().join(".");
+        }
+
+        function fill(d) {
+            var p = d;
+            while (p.depth > 1) p = p.parent;
+            var c = d3.lab(hue(p.name));
+            c.l = luminance(d.sum);
+            return c;
+        }
+
+        function arcTween(b) {
+            var i = d3.interpolate(this._current, b);
+            this._current = i(0);
+            return function(t) {
+                return arc(i(t));
+            };
+        }
+
+        function updateArc(d) {
+            return {
+                depth: d.depth,
+                x: d.x,
+                dx: d.dx
+            };
+        }
+        d3.select(self.frameElement).style("height", margin.top + margin.bottom + "px");
+    </script>
+</body>
+
+</html>
