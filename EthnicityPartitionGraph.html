@@ -14,9 +14,10 @@
 </style>
 
 <body>
-    <script src="d3.v3.min.js"></script>
-    <script src="flare.json"></script>
+    <script src="src/d3.v3.min.js"></script>
+    <script src="src/data.json"></script>
     <script>
+	// code repurposed from http://bl.ocks.org/mbostock/5944371
         var margin = {
                 top: 550,
                 right: 550,
@@ -153,11 +154,13 @@
                 mouseout(d, i, this);
             });
 
-        svg.selectAll(".donutText")
+        var donutText = svg.selectAll(".donutText")
             .data(partition.nodes(flare).slice(1))
             .enter().append("text")
             .attr("class", "donutText")
             .attr("dy", 80) //Move the text down
+
+
             .append("textPath")
             .attr("startOffset", "50%")
             .style("text-anchor", "middle")
@@ -261,7 +264,7 @@
                     .on("click", function(p) {
 
                         zoomIn(p);
-                        
+
                         navLoc.text(getLocPath(p.depth > 1 ? p.parent : p, ""));
                         navLoc.attr("dx", navLoc.text().length * test);
 
@@ -338,9 +341,9 @@
         }
 
         function mouseover(d, i, _this) {
-            
+
             d3.select(_this).style("fill-opacity", 0.5);
-            
+
             svg.select("#centerText")
                 .append("text")
                 .attr("font-weight", "bold")
