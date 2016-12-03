@@ -1,5 +1,5 @@
 **Hosted:**
 http://ethnpartgraph.kissr.com/
 
-**Download:**
+**Download (this repo):**
 https://goo.gl/QT1XhD
